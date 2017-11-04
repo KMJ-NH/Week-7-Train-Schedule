@@ -75,7 +75,7 @@ database.ref().on("child_added", function (childSnapshot, prevChildKey) {
 
   //This creates a variable for the addition of the number of minutes until the next train plus the current time,
   //  which shows when the next train should arrive.
-  var nextTrain = moment().add(minutesAway, "minutes").format('HH:mm');
+  var nextTrain = moment().add(minutesAway, "minutes").format('hh:mm a');
 
   // Add each train's data into the table
   $("#train-table > tbody").append("<tr><td>" + trainName + "</td><td>" + trainDestination + "</td><td>" +

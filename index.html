@@ -36,10 +36,10 @@
       <h1 class="text-center">Anytime is Train Time</h1>
       <h3 class="text-center">Choo Choo. Chee Chee.</h3>
     </div>
-    <div class="row">
-      <div class="col-lg-12">
 
-        <!-- Current Train Schedule-->
+    <!-- Current Train Schedule-->
+    <div class="row">
+      <div class="col-md-12">
         <div class="panel panel-primary">
           <div class="panel-heading">
             <h3 class="panel-title">
@@ -64,34 +64,38 @@
         </div>
 
         <!-- Add Train Form Header -->
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h3 class="panel-title">
-              <strong>Add Train</strong>
-            </h3>
-          </div>
-          <div class="panel-body">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">
+                  <strong>Add Train</strong>
+                </h3>
+              </div>
 
-            <!-- Train Entry Form -->
-            <form>
-              <div class="form-group">
-                <label for="train-name-input">Train Name</label>
-                <input class="form-control" id="train-name-input" type="text">
+              <!-- Train Entry Form -->
+              <div class="panel-body">
+                <form>
+                  <div class="form-group">
+                    <label for="train-name-input">Train Name</label>
+                    <input class="form-control" id="train-name-input" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label for="destination-input">Destination</label>
+                    <input class="form-control" id="destination-input" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label for="first-train-input">First Train Time (HH:mm - military time)</label>
+                    <input class="form-control" id="first-train-input" type="text" format="HH:mm">
+                  </div>
+                  <div class="form-group">
+                    <label for="frequency-input">Frequency (min)</label>
+                    <input class="form-control" id="frequency-input" type="text">
+                  </div>
+                  <button class="btn btn-primary" id="add-train-btn" type="submit">Submit</button>
+                </form>
               </div>
-              <div class="form-group">
-                <label for="destination-input">Destination</label>
-                <input class="form-control" id="destination-input" type="text">
-              </div>
-              <div class="form-group">
-                <label for="first-train-input">First Train Time (HH:mm - military time)</label>
-                <input class="form-control" id="first-train-input" type="text" format="HH:mm">
-              </div>
-              <div class="form-group">
-                <label for="frequency-input">Frequency (min)</label>
-                <input class="form-control" id="frequency-input" type="text">
-              </div>
-              <button class="btn btn-primary" id="add-train-btn" type="submit">Submit</button>
-            </form>
+            </div>
           </div>
         </div>
       </div>

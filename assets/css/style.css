@@ -1,16 +1,13 @@
 *{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
-body {
-    background-color: rgb(240, 128, 212);
-}  
-  
 .container {
     background-color: rgb(201, 65, 144);
 }
   
 .jumbotron {
-    background-color: rgb(88, 181, 235);
+    background-color: rgb(135, 209, 228);
     color: rgb(46, 41, 41);
 }
